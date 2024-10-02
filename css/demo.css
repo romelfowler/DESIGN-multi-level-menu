@@ -8,7 +8,14 @@
 	src: url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'), url('../fonts/bpicons/bpicons.woff') format('woff'), url('../fonts/bpicons/bpicons.ttf') format('truetype'), url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
 }/* Made with http://icomoon.io/ */
 
-
+/* COLORS */
+:root {
+	--blue: #015175;
+	--red: #ff0001;
+	--yellow: #e2e319;
+	--white: #cecece;
+	--black: #2a2b30;
+  }
 /* Resets */
 
 *,
@@ -37,8 +44,8 @@ body {
 	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	overflow: hidden;
 	margin: 0;
-	color: #cecece;
-	background: #2a2b30;
+	color: var(--white);
+	background: var(--black);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -60,7 +67,19 @@ a:hover {
 
 
 /* Blueprint header */
-
+.achc-icon {
+	background-size: 80px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    left: 37%;
+    position: relative;
+}
+.svg-inline--fa  {
+	font-size: 40px;
+}
 .bp-header {
 	display: -webkit-flex;
 	display: flex;
@@ -90,7 +109,7 @@ a:hover {
 	text-indent: 3px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	color: #5c5edc;
+	color: var(--blue);
 }
 
 .bp-tooltip:after {
@@ -117,7 +136,7 @@ a:hover {
 	letter-spacing: 0;
 	text-transform: none;
 	color: #fff;
-	background: #5c5edc;
+	background: var(--blue);
 }
 
 .bp-nav {
@@ -153,7 +172,7 @@ a:hover {
 }
 
 .bp-nav__item:hover {
-	background: #5c5edc;
+	background: var(--blue);
 }
 
 .bp-icon:after {
@@ -163,7 +182,7 @@ a:hover {
 	font-variant: normal;
 	text-align: center;
 	text-transform: none;
-	color: #5c5edc;
+	color: var(--blue);
 	-webkit-font-smoothing: antialiased;
 	speak: none;
 }
@@ -242,11 +261,12 @@ a:hover {
 
 .product {
 	display: inline-block;
-	width: 200px;
-	height: 200px;
-	margin: 10px;
-	border-radius: 5px;
-	background: #1c1d22;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    background: #1c1d22;
+    padding: 20px 30px;
 }
 
 .product .foodicon {

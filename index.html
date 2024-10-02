@@ -8,8 +8,9 @@
 	<title>Multi Menu</title>
 	<meta name="description" content="Blueprint: A basic template for a responsive multi-level menu" />
 	<meta name="keywords" content="blueprint, template, html, css, menu, responsive, mobile-friendly" />
-	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="author" content="romel fowler" />
+
+	<script src="https://kit.fontawesome.com/1d13e1658a.js" crossorigin="anonymous"></script>
 	<!-- food icons -->
 	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
 	<!-- demo styles -->
@@ -25,8 +26,8 @@
 		<!-- Blueprint header -->
 		<header class="bp-header cf">
 			<div class="dummy-logo">
-				<div class="dummy-icon foodicon foodicon--coconut"></div>
-				<h2 class="dummy-heading">ACHC</h2>
+				<div class="dummy-icon achc-icon" style="background-image: url(img/ACHC-Pillar.png)"></div>
+				<!-- <h2 class="dummy-heading">ACHC</h2> -->
 			</div>
 		
 		</header>
@@ -35,27 +36,42 @@
 			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
 			<div class="menu__wrap">
 				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Vegetables</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Fruits</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Iconography</a></li>
+					<!-- <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Fruits</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="#">Grains</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Mylk &amp; Drinks</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="#">Mylk &amp; Drinks</a></li> -->
 				</ul>
 				<!-- Submenu 1 -->
-				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Vegetables">
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Stalk Vegetables</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Roots &amp; Seeds</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Cabbages</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Salad Greens</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Mushrooms</a></li>
-					<li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Sale %</a></li>
+				<ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Iconography">
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Icon How To's</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">AC</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">ACH</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">AL</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">ASC</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">BH</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">CT</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">DEN</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">DME</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">HC</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">HH</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">HIT</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">HSP</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">LAB</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">ABS</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">PC</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">RX</a></li>
+					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">SL</a></li>
+
+
+					<!-- <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">CT</a></li> -->
 				</ul>
 				<!-- Submenu 1-1 -->
-				<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
+				<!-- <ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="Sale %">
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Fair Trade Roots</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Dried Veggies</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Our Brand</a></li>
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Homemade</a></li>
-				</ul>
+				</ul> -->
 				<!-- Submenu 2 -->
 				<ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Fruits">
 					<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Citrus Fruits</a></li>
